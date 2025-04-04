@@ -48,4 +48,18 @@ cout << "Value of r: " << r << endl; // prints 20 (reference to b, not changed)
 cout << "Value of a: " << a << endl; // prints 20 (reference to b, not changed)
 
 
+int d= 50;
+int &rd=d;
+int cd=d;
+
+cout<<"Value of d: " << d << endl; // prints 50 (value of d)
+cout<<"Value of rd: " << cd << endl; // prints 50 (reference to d)
+cout<<"Value of cd: " << cd << endl; // prints 50 (copy of d)
+
+cout<<"&d: " << &d << endl; // prints address of d (reference to d)
+cout<<"&rd: " << &rd << endl; // prints address of d (reference to d)
+cout<<"&cd: " << &cd << endl; // prints address of d (reference to d)
+
+
+
 return 0;}
